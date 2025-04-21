@@ -7,70 +7,51 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Browser extensions manager UI</title>
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="light-mode">
 
-  Extensions List
+  <main>
 
-  All
-  Active
-  Inactive
+    <div class="logo-container light-mode">
+      <img src="assets/images/logo.svg" 
+      alt="">
 
-  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+      <img class="searcher" src="assets/images/icon-sun.svg" alt="" srcset="" >
+      <!-- this one will be hidde -->
+      <img class="searcher" src="assets/images/icon-moon.svg" alt="" srcset="" >
 
-  DevLens
-  Quickly inspect page layouts and visualize element boundaries.
-  Remove
+    </div>
 
-  StyleSpy
-  Instantly analyze and copy CSS from any webpage element.
-  Remove
+    <section class="title-container">
+      <h1>Extensions List</h1>
 
-  SpeedBoost
-  Optimizes browser resource usage to accelerate page loading.
-  Remove
+      <div class="button-list">
+        <button class="nav-button light-mode">All</button>
+        <button class="nav-button light-mode">Active</button>
+        <button class="nav-button light-mode">Inactive</button>
 
-  JSONWizard
-  Formats, validates, and prettifies JSON responses in-browser.
-  Remove
+      </div>
+    
+    </section>
 
-  TabMaster Pro
-  Organizes browser tabs into groups and sessions.
-  Remove
+    <section class="card-container">
+    
+  
+    </section>
+  
+  </main>
 
-  ViewportBuddy
-  Simulates various screen resolutions directly within the browser.
-  Remove
 
-  Markup Notes
-  Enables annotation and notes directly onto webpages for collaborative debugging.
-  Remove
 
-  GridGuides
-  Overlay customizable grids and alignment guides on any webpage.
-  Remove
 
-  Palette Picker
-  Instantly extracts color palettes from any webpage.
-  Remove
-
-  LinkChecker
-  Scans and highlights broken links on any page.
-  Remove
-
-  DOM Snapshot
-  Capture and export DOM structures quickly.
-  Remove
-
-  ConsolePlus
-  Enhanced developer console with advanced filtering and logging.
-  Remove
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
